@@ -1,7 +1,7 @@
+// Asuku Takahashi CIS202 Graphic Lab
 import javax.swing.JPanel;
 import javax.swing.JFrame;
 import java.awt.*;
-import java.security.cert.CertPath;
 
 public class GraphicLab extends JPanel{
     @Override
@@ -11,10 +11,6 @@ public class GraphicLab extends JPanel{
         g.fillRect(0,0,400,400);
         //cloud
         g.setColor(new Color(186,231,248));
-//        g.fillRect(0,200,400,300);
-//        g.fillOval(-50,100,200,200);
-//        g.fillOval(100,100,200,200);
-//        g.fillOval(250,100,160,150);
         int x = 0;
         int y = 0;
         g.fillOval(30+x,50+y,100,50);
@@ -45,8 +41,9 @@ public class GraphicLab extends JPanel{
         g.setColor(new Color(35,186,167));
         g.fillOval(-250,320,880,640);
 
-        y = 0;
+
         //hut
+        y = 50; // distance of the hut from the beach
         g.setColor(new Color(159,96,9));
         g.fillRect(100,180-y,100,100);
         //roof
@@ -93,7 +90,7 @@ public class GraphicLab extends JPanel{
         g.fillRect(345+x,50,100,20);
         g.setColor(Color.black);
         g.setFont(new Font("TimesRoman", Font.PLAIN, 12));
-        g.drawString("GO SEASIDERS", 350+x,65);
+        g.drawString("GO SEASIDERS!", 350+x,65);
 
 
 
