@@ -43,7 +43,7 @@ public class GraphicLab extends JPanel{
 
 
         //hut
-        y = 50; // distance of the hut from the beach
+        y = 0; // distance of the hut from the beach
         g.setColor(new Color(159,96,9));
         g.fillRect(100,180-y,100,100);
         //roof
